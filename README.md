@@ -1,2 +1,2 @@
 # Dynamic-README-Generator
-Command-line application that can quickly generates a README file 
+Command-line application that can quickly generate a README file 
