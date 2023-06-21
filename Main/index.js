@@ -76,14 +76,48 @@ const questions = [
         message:'Which license will you use for your project? Choose n/a if no license is used',
         choices: ['n/a','mit','agpl','apache']
     },
+    {
+        type:'input',
+        name:'test',
+        message:'Is there any testing required for your project? If not, tyoe n/a.',
+        validate:titleInput => {
+            if(titleInput) {
+                return true;
+            } else {
+                console.log('Please enter your response!');
+                return false;
+            }
+        }
+    },
     
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeFile = fileContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./main/generated-README.md', fileContent, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve({
+                ok: true,
+                message:'README created!'
+            });
+        });
+    });
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+
+    return inquirer.prompt(questions)
+    .then(readmeData => {
+        return readmeData;
+    })
+}
+
 
 // Function call to initialize app
 init();
