@@ -2,7 +2,7 @@
   # test
 
   
-  ![badge](https://img.shields.to/badge/license-n/a-blue)
+  ![badge](https://img.shields.to/badge/license-mit-blue)
     
 
   ## Table-of-Contents
@@ -12,6 +12,7 @@
   * [Usage](#usage)
   * [Credits](#credits)
   * [Testing](#test)
+  
   * [License](#license)
 
   ## [Description](#table-of-contents)
@@ -39,7 +40,7 @@
     
   The application is covered under the following license:
     
-    
-  [n/a](https://choosealicense.com/licenses/n/a)
+  
+  [mit](https://choosealicense.com/licenses/mit)
     
   
