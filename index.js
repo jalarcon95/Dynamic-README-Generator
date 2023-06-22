@@ -71,12 +71,6 @@ const questions = [
         }
     },
     {
-        type:'list',
-        name:'license',
-        message:'Which license will you use for your project? Choose n/a if no license is used',
-        choices: ['n/a','mit','agpl','apache']
-    },
-    {
         type:'input',
         name:'test',
         message:'Is there any testing required for your project? If not, tyoe n/a.',
@@ -89,7 +83,12 @@ const questions = [
             }
         }
     },
-    
+    {
+        type:'list',
+        name:'license',
+        message:'Which license will you use for your project? Choose n/a if no license is used',
+        choices: ['n/a','mit','agpl','apache']
+    },
 ];
 
 // TODO: Create a function to write README file

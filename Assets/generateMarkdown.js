@@ -24,13 +24,22 @@ function renderLicenseBadge(license) {
   function renderLicenseSection(license) {
     if (license !== 'no license') {
       return `
-      ## [License](#table-of-contents)
+    ## [License](#table-of-contents)
       
-      The application is covered under the following license:
+    The application is covered under the following license:
       
-      ${renderLicenseLink(licesne)}`;
+      ${renderLicenseLink(license)}`;
     } else {
       return ' ';
+    }
+  }
+
+  function renderLicenseTOC(license) {
+    if (license !=='no license') {
+    return `
+    *[License](#license)`;
+    } else {
+        return ' ';
     }
   }
   
@@ -41,15 +50,37 @@ function renderLicenseBadge(license) {
 
     ${renderLicenseBadge(data.license)}
 
-    ##Table-of-Contents
+    ## Table-of-Contents
 
     *[Description](#description)
-    *[Description](#description)
-    *[Description](#description)
-    *[Description](#description)
-    *[Description](#description)
-    *[Description](#description)
-  
+    *[Installation](#install)
+    *[Usage](#usage)
+    *[Credits](#credits)
+    *[Testing](#test)
+    ${renderLicenseTOC(data.license)}
+
+    ## [Description](#table-of-contents)
+
+    ${data.description}
+
+    ## [Installation](#table-of-contents)
+
+    ${data.install}
+
+    ## [Usage](#table-of-contents)
+
+    ${data.usage}
+
+    ## [Credits](#table-of-contents)
+
+    ${data.credits}
+
+    ## [Testing](#table-of-contents)
+
+    ${data.test}
+
+    ${renderLicenseSection(data.license)}
+    
   `;
   }
   
