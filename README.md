@@ -21,12 +21,14 @@
 
   ## [Installation](#table-of-contents)
 
-  Node required, npm inquirer required. The user can clone this code and run the node command in the terrminal to generate REAMDME File 
+  Node required, npm inquirer required. The user can clone this code and run the node command in the terrminal to generate REAMDME File.
 
   ## [Usage](#table-of-contents)
 
-  The user will run the node command to prompt questions pertaining to each section of the README file. Once all sections are completed, a README file will be generated with the input created by the user through the terminal. This README will be complete with proper syntax and a table of contents containing links to each section
+  The user will run the node command to prompt questions pertaining to each section of the README file. Once all sections are completed, a README file will be generated with the input created by the user through the terminal. This README will be complete with proper syntax and a table of contents containing links to each section.
 
+  App Demo Link: https://drive.google.com/file/d/15wKFmNG1LQjrNLiytC1QYPYt2xXi6v9w/view
+  
   ## [Credits](#table-of-contents)
 
   John Alarcon Github: https://github.com/jalarcon95 Email: n/a
